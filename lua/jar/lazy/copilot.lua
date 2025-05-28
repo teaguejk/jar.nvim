@@ -4,7 +4,6 @@ return {
     event = "InsertEnter",
     config = function()
         require("copilot").setup({
-            --[[
             suggestion = {
                 enabled = true,
                 auto_trigger = false,
@@ -13,13 +12,12 @@ return {
                 keymap = {
                     accept = false,
                     accept_word = false,
-                    accept_line = "<Tab>",
+                    accept_line = "<C-y>",
                     next = false,
                     prev = false,
                     dismiss = false,
                 },
             },
-            --]]
         })
     end,
 }
