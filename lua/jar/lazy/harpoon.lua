@@ -7,15 +7,15 @@ return {
 
         harpoon:setup()
 
-        vim.keymap.set("n", "<leader>A", function() 
+        vim.keymap.set("n", "<leader>A", function()
             harpoon:list():prepend()
-            print('harpooned file: ' .. vim.fn.expand('%s')) 
+            print('harpooned file: ' .. vim.fn.expand('%s'))
         end)
-        vim.keymap.set("n", "<leader>a", function() 
-            harpoon:list():add() 
-            print('harpooned file: ' .. vim.fn.expand('%s')) 
+        vim.keymap.set("n", "<leader>a", function()
+            harpoon:list():add()
+            print('harpooned file: ' .. vim.fn.expand('%s'))
         end)
-        
+
         vim.keymap.set("n", "<C-e>", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
 
         vim.keymap.set("n", "<C-h>", function() harpoon:list():select(1) end)
@@ -26,5 +26,5 @@ return {
         vim.keymap.set("n", "<leader><C-t>", function() harpoon:list():replace_at(2) end)
         vim.keymap.set("n", "<leader><C-n>", function() harpoon:list():replace_at(3) end)
         vim.keymap.set("n", "<leader><C-s>", function() harpoon:list():replace_at(4) end)
-    end 
+    end
 }
