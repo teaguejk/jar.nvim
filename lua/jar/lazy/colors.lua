@@ -8,7 +8,6 @@ return
     end,
 }
 ]] --
---[[
 {
     'rose-pine/neovim',
     priority = 1000,
@@ -22,7 +21,7 @@ return
         vim.cmd.colorscheme 'rose-pine'
     end,
 }
-]] --
+--[[
 {
     'folke/tokyonight.nvim',
     priority = 1000,
@@ -40,6 +39,7 @@ return
         vim.cmd.colorscheme 'tokyonight-night'
     end,
 }
+]] --
 --[[
 {
     "yoom-engineering/oxocarbon.nvim",
@@ -100,3 +100,4 @@ return
     end,
 }
 ]] --
+
